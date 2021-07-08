@@ -13,3 +13,18 @@ export const selectedUser = (user) => {
         payload: user,
     };
 };
+
+export const setAlbums = (albums) => {
+    return{
+        type: ActionTypes.SET_ALBUMS,
+        payload: albums,
+    };
+};
+
+export const selectedAlbum = (album) => {
+    return{
+        type: ActionTypes.SELECTED_ALBUM,
+        payload: album,
+    };
+};
+

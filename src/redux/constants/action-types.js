@@ -1,5 +1,6 @@
 export const ActionTypes = {
     SET_USERS: "SET_USERS",
     SELECTED_USER: "SELECTED_USER",
+    SET_ALBUMS: "SET_ALBUMS",
     SELECTED_ALBUM: "SELECTED_ALBUM"
 }

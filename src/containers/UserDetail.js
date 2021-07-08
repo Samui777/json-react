@@ -27,29 +27,27 @@ const UserDetail = ()=> {
       {Object.keys(user).length === 0 ? (
         <div>...Loading</div>
       ) : (
-        <div className="ui placeholder segment">
-          <div className="ui two column stackable center aligned grid">
-            <div className="ui vertical divider">AND</div>
-            <div className="middle aligned row">
-              <div className="column lp">
-                <img className="ui fluid image" src="#" />
-              </div>
-              <div className="column rp">
+        <div className="ui list">
+            <div className="item">
+                <div className="content">
                 <h1>{name}</h1>
-                <h2>
-                  <a className="ui teal tag label">${email}</a>
-                </h2>
-                <h3 className="ui brown block header">{website}</h3>
-                <p>{phone}</p>
-                <div className="ui vertical animated button" tabIndex="0">
-                  <div className="hidden content">
-                    <i className="shop icon"></i>
-                  </div>
-                  <div className="visible content">Add to Cart</div>
                 </div>
-              </div>
             </div>
-          </div>
+            <div className="item">
+                <div className="content">
+                    <h2>{email}</h2>
+                </div>
+            </div>
+            <div className="item">
+                <div className="content">
+                    <h3>{phone}</h3>
+                </div>
+            </div>
+            <div className="item">
+                <div className="content">
+                    <h3>{website}</h3>
+                </div>
+            </div>
         </div>
       )}
     </div>

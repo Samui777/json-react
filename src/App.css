@@ -40,3 +40,8 @@
 .ui.grid {
   margin-top: 0;
 }
+
+.image {
+  width: 150px;
+  height: 150px;
+}

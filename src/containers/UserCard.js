@@ -8,14 +8,14 @@ const UserCard = ()=> {
         const {id, name, username, email} = users;
 
         return (
-            <div className="four wide column" key={id}>
+            <div className="three wide column" key={id}>
                 <Link to={`/users/${id}`}>
-                    <div className="ui link cards">
+                    <div className="ui fluid card">
                         <div className="card">
                             <div className="image"></div>
                             <div className="content">
-                                <div className="header">{name}</div>use
-                                <div className="meta">{email}</div>
+                                <div className="header">{name}</div>
+
                             </div>
                         </div>
                     </div>
